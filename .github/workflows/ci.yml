@@ -21,6 +21,8 @@ jobs:
       - run: pip install \
           mkdocs-material \
           mkdocs-static-i18n \
-          mkdocs-i18n
+          mkdocs-i18n \
+          Pillow \
+          CairoSVG
       - run: mkdocs gh-deploy --force
 
