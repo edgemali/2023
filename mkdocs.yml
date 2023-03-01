@@ -1,0 +1,125 @@
+site_name: edge-ai-ml
+site_url: https://edgemali.github.io/2023
+
+nav:
+  - Summary:
+    - IA: 
+      - index.en.md  
+      - edge.en.md
+      - snn.en.md
+      - bci.en.md
+
+theme:
+
+  name: material
+  nav_style: dark
+  anonymize_ip: true
+  #language: en
+  #custom_dir: overrides
+  #logo: image/edge/ai.png
+  font:
+    text: Roboto Mono
+  palette:
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      primary: amber
+      accent: amber
+      toggle:
+        icon: material/brightness-auto
+        name: mode automatique
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/weather-sunny
+        name: mode nuit
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: lime
+      accent: lime
+      toggle:
+        icon: material/weather-night
+        name: mode jour
+
+  features:
+    #- navigation.instant
+    #- navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    #- header.autohide
+    - announce.dismiss
+    #- navigation.sections
+    #- navigation.expand
+    - navigation.path
+    - navigation.footer
+    - navigation.top
+    - toc.integrate
+    - toc.follow
+
+plugins:
+  - search
+  - i18n :
+      default_language: en
+      languages:
+        en: English
+        fr: Français
+  - social:
+      cards_font: Roboto
+      cards_dir: .cache/plugin/social
+      cards_color:
+        fill: "#0FF1CE" 
+        text: "#FFFFFF"
+        
+        
+    
+#material_alternate: true
+
+extra:
+
+  version:
+    provider: mike
+
+  social:
+    - icon: fontawesome/brands/facebook
+      link: 
+      name: RobotsMali on Facebook
+
+    - icon: fontawesome/brands/instagram
+      link: 
+      name: RobotsMali on Instagram
+    
+    - icon: fontawesome/brands/linkedin
+      link: 
+      name: RobotsMali on Linkedin
+
+    - icon: fontawesome/brands/github
+      link: 
+      name: RobotsMali on Github
+
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:<email-address>
+      name: Our Email
+
+
+
+markdown_extensions:
+  - markdown.extensions.toc:
+      slugify: !!python/object/apply:pymdownx.slugs.slugify {kwds: {case: lower}}
+      permalink: "\ue157"
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_png
+
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+  
+
+copyright: Copyright &copy; 2022 - 2023 Edge-Mali-Ai
+
