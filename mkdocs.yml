@@ -8,9 +8,6 @@ nav:
       - edge.en.md
       - snn.en.md
       - bci.en.md
-  - Calendar:
-    - Event:
-      - cal.en.md
 
 theme:
 
