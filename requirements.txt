@@ -1,1 +1,5 @@
 mkdocs-material==9.0.14
+mkdocs-static-i18n
+mkdocs-i18n
+Pillow
+CairoSVG
