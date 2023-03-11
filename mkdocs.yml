@@ -8,6 +8,11 @@ nav:
       - edge.en.md
       - snn.en.md
       - bci.en.md
+  - Calendar:
+    - Event:
+      - cal.en.md
+  - Applications Forms:
+      - application.en.md
 
 theme:
 
@@ -107,17 +112,13 @@ extra:
 
 
 markdown_extensions:
-  - markdown.extensions.toc:
-      slugify: !!python/object/apply:pymdownx.slugs.slugify {kwds: {case: lower}}
-      permalink: "\ue157"
-  - pymdownx.emoji:
-      emoji_generator: !!python/name:pymdownx.emoji.to_png
-
-  - pymdownx.superfences:
-      custom_fences:
-        - name: mermaid
-          class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true
+  - attr_list
+  - md_in_html
+  - pymdownx.superfences
+  - admonition
 
   
 
